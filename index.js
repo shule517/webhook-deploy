@@ -5,16 +5,21 @@ var express = require('express'),
   // app.use(app.router);
   //app.use(express.static(__dirname + '/public'));
 
+  //exec("../docker_start.sh", function(err, stdout, stderr) {
+  //  console.log("docker_start.sh error \nerr:" + err + "\nstdout:" + stdout + "\nstderr:" + stderr);
+  //});
+
   app.listen(3000);
   console.log('server starting');
 
   app.all('/webhook', function(req, res) {
     console.log('push hook!!');
-/*
-    exec("echo aaaaa", function(err, stdout, stderr) {
+    exec("../docker_start.sh", function(err, stdout, stderr) {
+      console.log("docker_start.sh error \nerr:" + err + "\nstdout:" + stdout + "\nstderr:" + stderr);
     });
-*/
   });
+
+//  app.listen(3000);
 /*
   app.all('/webhook', function(req, res) {
     var cmd = exec("git pull", {
