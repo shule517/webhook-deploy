@@ -1,0 +1,22 @@
+{
+  "name": "webhook-deploy",
+  "version": "1.0.0",
+  "description": "auto-deploy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shule517/webhook-deploy.git"
+  },
+  "author": "shule517",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shule517/webhook-deploy/issues"
+  },
+  "homepage": "https://github.com/shule517/webhook-deploy#readme",
+  "devDependencies": {
+    "express": "^4.13.4"
+  }
+}
